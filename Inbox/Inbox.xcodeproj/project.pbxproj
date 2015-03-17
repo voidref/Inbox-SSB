@@ -11,6 +11,7 @@
 		9CD13FB11AB8A19500034C6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD13FB01AB8A19500034C6D /* Images.xcassets */; };
 		9CD13FB41AB8A19500034C6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD13FB21AB8A19500034C6D /* MainMenu.xib */; };
 		9CD13FC01AB8A19500034C6D /* InboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD13FBF1AB8A19500034C6D /* InboxTests.swift */; };
+		E775F4EA1AB8A41E00DD7A28 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		9CD13FB91AB8A19500034C6D /* InboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD13FBE1AB8A19500034C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD13FBF1AB8A19500034C6D /* InboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTests.swift; sourceTree = "<group>"; };
+		E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9CD13FAE1AB8A19500034C6D /* AppDelegate.swift */,
+				E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */,
 				9CD13FB01AB8A19500034C6D /* Images.xcassets */,
 				9CD13FB21AB8A19500034C6D /* MainMenu.xib */,
 				9CD13FAC1AB8A19500034C6D /* Supporting Files */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD13FAF1AB8A19500034C6D /* AppDelegate.swift in Sources */,
+				E775F4EA1AB8A41E00DD7A28 /* InboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +397,7 @@
 				9CD13FC51AB8A19500034C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CD13FC61AB8A19500034C6D /* Build configuration list for PBXNativeTarget "InboxTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +406,7 @@
 				9CD13FC81AB8A19500034C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

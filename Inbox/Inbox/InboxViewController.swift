@@ -17,6 +17,7 @@ class InboxViewController: NSViewController {
         // Do view setup here.
         
         webView?.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.9 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.9"
+        webView?.mainFrameURL = "http://inbox.google.com/"
         
     }
     
