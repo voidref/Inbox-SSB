@@ -669,15 +669,14 @@
         </menu>
         <window title="Inbox" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="1035" height="728"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="contentRect" x="335" y="390" width="1351" height="930"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="1035" height="728"/>
+                <rect key="frame" x="0.0" y="0.0" width="1351" height="930"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="E8F-EZ-zrc">
-                        <rect key="frame" x="0.0" y="0.0" width="1035" height="728"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1351" height="930"/>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                             <nil key="identifier"/>
                         </webPreferences>
@@ -690,7 +689,7 @@
                     <constraint firstAttribute="trailing" secondItem="E8F-EZ-zrc" secondAttribute="trailing" id="buS-iC-hrc"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="533.5" y="518"/>
+            <point key="canvasLocation" x="491.5" y="544"/>
         </window>
         <viewController id="fq0-rl-ocb" customClass="InboxViewController" customModule="Inbox" customModuleProvider="target">
             <connections>
