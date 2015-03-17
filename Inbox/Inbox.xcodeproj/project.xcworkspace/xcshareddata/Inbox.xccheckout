@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90702399-6F65-4665-A66A-B725FADE64ED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Inbox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>95C3C7AF8BE4E66C5D384CD978E21CDB512895CD</key>
+		<string>https://stash.smugsw.com/scm/cp/capo.git</string>
+		<key>B6AD396E5EEA67FDFB90B7DC9EADAF28382A8DF4</key>
+		<string>https://github.com/mmarfil/Inbox-SSB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Inbox/Inbox.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>95C3C7AF8BE4E66C5D384CD978E21CDB512895CD</key>
+		<string>../../../..</string>
+		<key>B6AD396E5EEA67FDFB90B7DC9EADAF28382A8DF4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mmarfil/Inbox-SSB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6AD396E5EEA67FDFB90B7DC9EADAF28382A8DF4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>95C3C7AF8BE4E66C5D384CD978E21CDB512895CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6AD396E5EEA67FDFB90B7DC9EADAF28382A8DF4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Inbox-SSB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
