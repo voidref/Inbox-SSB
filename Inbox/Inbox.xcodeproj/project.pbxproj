@@ -11,6 +11,7 @@
 		9CD13FB11AB8A19500034C6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD13FB01AB8A19500034C6D /* Images.xcassets */; };
 		9CD13FB41AB8A19500034C6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD13FB21AB8A19500034C6D /* MainMenu.xib */; };
 		9CD13FC01AB8A19500034C6D /* InboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD13FBF1AB8A19500034C6D /* InboxTests.swift */; };
+		E76F037C1ABB9B6700E48B75 /* InboxWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F037B1ABB9B6700E48B75 /* InboxWebView.m */; };
 		E775F4EA1AB8A41E00DD7A28 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,9 @@
 		9CD13FB91AB8A19500034C6D /* InboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD13FBE1AB8A19500034C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD13FBF1AB8A19500034C6D /* InboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTests.swift; sourceTree = "<group>"; };
+		E76F03791ABB9B6600E48B75 /* Inbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		E76F037A1ABB9B6700E48B75 /* InboxWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxWebView.h; sourceTree = "<group>"; };
+		E76F037B1ABB9B6700E48B75 /* InboxWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxWebView.m; sourceTree = "<group>"; };
 		E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,9 @@
 			children = (
 				9CD13FAE1AB8A19500034C6D /* AppDelegate.swift */,
 				E775F4E91AB8A41E00DD7A28 /* InboxViewController.swift */,
+				E76F037A1ABB9B6700E48B75 /* InboxWebView.h */,
+				E76F037B1ABB9B6700E48B75 /* InboxWebView.m */,
+				E76F03791ABB9B6600E48B75 /* Inbox-Bridging-Header.h */,
 				9CD13FB01AB8A19500034C6D /* Images.xcassets */,
 				9CD13FB21AB8A19500034C6D /* MainMenu.xib */,
 				9CD13FAC1AB8A19500034C6D /* Supporting Files */,
@@ -158,6 +165,7 @@
 				TargetAttributes = {
 					9CD13FA81AB8A19500034C6D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = SR7K2S8GE4;
 					};
 					9CD13FB81AB8A19500034C6D = {
 						CreatedOnToolsVersion = 6.2;
@@ -208,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76F037C1ABB9B6700E48B75 /* InboxWebView.m in Sources */,
 				9CD13FAF1AB8A19500034C6D /* AppDelegate.swift in Sources */,
 				E775F4EA1AB8A41E00DD7A28 /* InboxViewController.swift in Sources */,
 			);
@@ -324,10 +333,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Inbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inbox/Inbox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -335,10 +349,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Inbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inbox/Inbox-Bridging-Header.h";
 			};
 			name = Release;
 		};

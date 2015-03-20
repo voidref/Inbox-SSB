@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7525" systemVersion="14D105g" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7525"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="7525"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -670,32 +669,17 @@
         <window title="Inbox" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="1035" height="728"/>
+            <rect key="contentRect" x="335" y="390" width="746" height="487"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="1035" height="728"/>
+                <rect key="frame" x="0.0" y="0.0" width="746" height="487"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="E8F-EZ-zrc">
-                        <rect key="frame" x="0.0" y="0.0" width="1035" height="728"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
-                            <nil key="identifier"/>
-                        </webPreferences>
-                    </webView>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="E8F-EZ-zrc" secondAttribute="bottom" id="40L-6V-hEy"/>
-                    <constraint firstItem="E8F-EZ-zrc" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="UUl-CK-Oeu"/>
-                    <constraint firstItem="E8F-EZ-zrc" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="W9C-4M-QlV"/>
-                    <constraint firstAttribute="trailing" secondItem="E8F-EZ-zrc" secondAttribute="trailing" id="buS-iC-hrc"/>
-                </constraints>
             </view>
-            <point key="canvasLocation" x="533.5" y="518"/>
+            <point key="canvasLocation" x="269" y="145.5"/>
         </window>
         <viewController id="fq0-rl-ocb" customClass="InboxViewController" customModule="Inbox" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="RJC-mG-7RB"/>
-                <outlet property="webView" destination="E8F-EZ-zrc" id="6oe-Ao-hdf"/>
             </connections>
         </viewController>
     </objects>
