@@ -83,6 +83,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Edit" id="W48-6f-4Dl">
                         <items>
+                            <menuItem title="Reload Inbox" keyEquivalent="r" id="DoJ-Nb-AWg" userLabel="Reload Inbox">
+                                <connections>
+                                    <action selector="reload:" target="-1" id="BcS-8f-xZm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Zf0-X2-scV"/>
                             <menuItem title="Undo" keyEquivalent="z" id="dRJ-4n-Yzg">
                                 <connections>
                                     <action selector="undo:" target="-1" id="M6e-cu-g7V"/>
@@ -325,15 +331,6 @@
                 </menuItem>
                 <menuItem title="Shortcuts" id="FRu-Gy-SqZ" userLabel="Shortcuts">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Shortcuts" systemMenu="window" id="7OY-yj-qEN">
-                        <items>
-                            <menuItem title="Reload" keyEquivalent="r" id="DoJ-Nb-AWg">
-                                <connections>
-                                    <action selector="reload:" target="-1" id="BcS-8f-xZm"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
                 </menuItem>
             </items>
         </menu>
