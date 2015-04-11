@@ -31,6 +31,14 @@ class InboxViewController: NSViewController, WKNavigationDelegate, WKUIDelegate 
         wv.loadRequest(request) 
     }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        self.view.window?.titlebarAppearsTransparent = true
+        self.view.window?.movableByWindowBackground = true
+        self.view.window!.styleMask = self.view.window!.styleMask | NSFullSizeContentViewWindowMask;
+    }
+    
     // Open links in browser nuttyness
     func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         let haxview = WKWebView(frame: self.view.bounds, configuration: configuration)
