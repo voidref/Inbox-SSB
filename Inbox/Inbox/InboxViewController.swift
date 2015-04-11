@@ -14,6 +14,10 @@ class InboxViewController: NSViewController, WKNavigationDelegate, WKUIDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor(red: 66.0 / 255.0, green: 133.0 / 255.0, blue: 244.0 / 255.0, alpha: 1.0).CGColor
+        
         let userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.9 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.9"
         
         let wv = InboxWebView(frame: view.bounds)
@@ -24,7 +28,7 @@ class InboxViewController: NSViewController, WKNavigationDelegate, WKUIDelegate 
         view.addSubview(wv)
 
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[wv]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["wv": wv]))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[wv]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["wv": wv]))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(25)-[wv]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["wv": wv]))
         self.webView = wv
 
         let request = NSMutableURLRequest(URL: NSURL(string: "http://inbox.google.com/")!)
