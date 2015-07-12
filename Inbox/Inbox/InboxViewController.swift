@@ -17,6 +17,7 @@ class InboxViewController: NSViewController, WKNavigationDelegate, WKUIDelegate 
         
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor(red: 66.0 / 255.0, green: 133.0 / 255.0, blue: 244.0 / 255.0, alpha: 1.0).CGColor
+        view.layer?.cornerRadius = 10
         
         let userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.9 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.9"
         
